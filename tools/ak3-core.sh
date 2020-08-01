@@ -764,9 +764,6 @@ setup_ak() {
       fi;
     ;;
   esac;
-  if [ ! "$no_block_display" ]; then
-    ui_print "$block";
-  fi;
 }
 ###
 
