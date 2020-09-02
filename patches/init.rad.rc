@@ -3,6 +3,9 @@ on property:sys.post_boot.parsed=1
     
 on property:vendor.post_boot.parsed=1
 
+# Insert wlan module
+    insmod vendor/lib/modules/wlan-p.ko
+
 # Initialize CPU
     # configure governor settings for little cluster
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor schedutil
